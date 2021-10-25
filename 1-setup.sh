@@ -134,6 +134,7 @@ PKGS=(
 'nano'
 'neofetch'
 'networkmanager'
+'network-manager-applet'
 'ntfs-3g'
 'okular'
 'openbsd-netcat'
