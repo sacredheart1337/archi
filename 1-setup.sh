@@ -137,6 +137,7 @@ PKGS=(
 'okular'
 'openbsd-netcat'
 'openssh'
+'opera'
 'os-prober'
 'oxygen'
 'p7zip'
