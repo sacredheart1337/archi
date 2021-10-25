@@ -226,6 +226,7 @@ if [ $(whoami) = "root"  ];
 then
     useradd -m -G wheel,libvirt -s /bin/bash $username 
 	passwd $username
+	passwd
 	cp -R /root/ArchTitus /home/$username/
     chown -R $username: /home/$username/ArchTitus
 	read -p "Please name your machine:" nameofmachine
