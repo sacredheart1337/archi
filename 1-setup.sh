@@ -171,6 +171,7 @@ PKGS=(
 'vim'
 'virt-manager'
 'virt-viewer'
+'vlc'
 'wget'
 'which'
 'wine-gecko'
