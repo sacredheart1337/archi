@@ -32,6 +32,7 @@ echo "-------------------------------------------------"
 echo "       Setup Language to PL and set locale       "
 echo "-------------------------------------------------"
 sed -i 's/^#pl_PL.UTF-8 UTF-8/pl_PL.UTF-8 UTF-8/' /etc/locale.gen
+sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 timedatectl --no-ask-password set-timezone Europe/Warsaw
 timedatectl --no-ask-password set-ntp 1
