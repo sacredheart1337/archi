@@ -122,6 +122,7 @@ PKGS=(
 'layer-shell-qt'
 'libnewt'
 'libtool'
+'libreoffice-fresh'
 'linux'
 'linux-firmware'
 'linux-headers'
