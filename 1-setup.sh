@@ -31,15 +31,15 @@ sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g' /etc/ma
 echo "-------------------------------------------------"
 echo "       Setup Language to PL and set locale       "
 echo "-------------------------------------------------"
-sed -i 's/^#pl_PL.UTF-8 UTF-8/pl_PL.UTF-8 UTF-8/' /etc/locale.gen
-sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
-locale-gen
-timedatectl --no-ask-password set-timezone Europe/Warsaw
-timedatectl --no-ask-password set-ntp 1
-localectl --no-ask-password set-locale LANG="pl_PL.UTF-8" LC_COLLATE="" LC_TIME="pl_PL.UTF-8"
+sudo sed -i 's/^#pl_PL.UTF-8 UTF-8/pl_PL.UTF-8 UTF-8/' /etc/locale.gen
+sudo sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+sudo locale-gen
+sudo timedatectl --no-ask-password set-timezone Europe/Warsaw
+sudo timedatectl --no-ask-password set-ntp 1
+sudo localectl --no-ask-password set-locale LANG="pl_PL.UTF-8" LC_COLLATE="" LC_TIME="pl_PL.UTF-8"
 
 # Set keymaps
-localectl --no-ask-password set-keymap pl
+sudo localectl --no-ask-password set-keymap pl
 
 # Add sudo no password rights
 sed -i 's/^# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers
@@ -232,7 +232,7 @@ if [ $(whoami) = "root"  ];
 then
     useradd -m -G wheel,libvirt -s /bin/bash $username 
 	passwd $username
-	passwd
+	passwd # password for root
 	cp -R /root/ArchTitus /home/$username/
     chown -R $username: /home/$username/ArchTitus
 	read -p "Please name your machine:" nameofmachine
