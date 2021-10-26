@@ -33,13 +33,15 @@ echo "       Setup Language to PL and set locale       "
 echo "-------------------------------------------------"
 sudo sed -i 's/^#pl_PL.UTF-8 UTF-8/pl_PL.UTF-8 UTF-8/' /etc/locale.gen
 sudo sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
-sudo locale-gen
-sudo timedatectl --no-ask-password set-timezone Europe/Warsaw
-sudo timedatectl --no-ask-password set-ntp true
-sudo echo pl_PL.UTF-8 > /etc/locale.conf
+locale-gen
+ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
+timedatectl --no-ask-password set-ntp true
+echo LANG=pl_PL.UTF-8 > /etc/locale.conf
+export LANG=pl_PL.UTF-8
+hwclock --systohc --utc
 
 # Set keymaps
-sudo localectl --no-ask-password set-keymap pl
+localectl --no-ask-password set-keymap pl
 
 # Add sudo no password rights
 sed -i 's/^# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers
