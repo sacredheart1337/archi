@@ -35,8 +35,8 @@ sudo sed -i 's/^#pl_PL.UTF-8 UTF-8/pl_PL.UTF-8 UTF-8/' /etc/locale.gen
 sudo sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 sudo locale-gen
 sudo timedatectl --no-ask-password set-timezone Europe/Warsaw
-sudo timedatectl --no-ask-password set-ntp 1
-sudo localectl --no-ask-password set-locale LANG="pl_PL.UTF-8" LC_COLLATE="" LC_TIME="pl_PL.UTF-8"
+sudo timedatectl --no-ask-password set-ntp true
+sudo echo pl_PL.UTF-8 > /etc/locale.conf
 
 # Set keymaps
 sudo localectl --no-ask-password set-keymap pl
