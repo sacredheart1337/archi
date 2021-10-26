@@ -151,6 +151,7 @@ PKGS=(
 'pkgconf'
 'powerline-fonts'
 'print-manager'
+'plasma-nm'
 'pulseaudio'
 'pulseaudio-alsa'
 'pulseaudio-bluetooth'
