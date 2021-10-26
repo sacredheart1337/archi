@@ -87,6 +87,7 @@ PKGS=(
 'cronie'
 'cups'
 'dialog'
+'discord'
 'discover'
 'dolphin'
 'dosfstools'
