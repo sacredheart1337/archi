@@ -175,7 +175,6 @@ PKGS=(
 'unrar'
 'unzip'
 'usbutils'
-'vim'
 'virt-manager'
 'virt-viewer'
 'vlc'
