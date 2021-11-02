@@ -45,6 +45,7 @@ PKGS=(
 'ttf-hack'
 'ttf-meslo' # Nerdfont package
 'ttf-roboto'
+'snap-pac'
 )
 
 for PKG in "${PKGS[@]}"; do
