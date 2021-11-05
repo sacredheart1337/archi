@@ -159,6 +159,7 @@ PKGS=(
 'pulseaudio-alsa'
 'pulseaudio-bluetooth'
 'python-pip'
+'qbittorrent'
 'qemu'
 'rsync'
 'sddm'
