@@ -121,7 +121,6 @@ PKGS=(
 'kde-gtk-config'
 'kmix'
 'kwalletmanager'
-'kitty'
 'konsole'
 'layer-shell-qt'
 'libnewt'
