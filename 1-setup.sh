@@ -151,6 +151,7 @@ PKGS=(
 'networkmanager'
 'network-manager-applet'
 'ntfs-3g'
+'ntp'
 'okular'
 'openbsd-netcat'
 'openssh'
