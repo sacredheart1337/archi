@@ -165,6 +165,8 @@ PKGS=(
 'powerline-fonts'
 'print-manager'
 'plasma-nm'
+'plasma-meta'
+'powerdevil'
 'pulseaudio'
 'pulseaudio-alsa'
 'pulseaudio-bluetooth'
