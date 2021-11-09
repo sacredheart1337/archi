@@ -129,7 +129,6 @@ PKGS=(
 'kinfocenter'
 'kscreen'
 'kvantum-qt5'
-'kmix'
 'kwalletmanager'
 'konsole'
 'layer-shell-qt'
