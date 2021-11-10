@@ -129,7 +129,6 @@ PKGS=(
 'kinfocenter'
 'kscreen'
 'kvantum-qt5'
-'kwalletmanager'
 'konsole'
 'layer-shell-qt'
 'libdvdcss'
@@ -244,7 +243,7 @@ fi
 echo -e "\nDone!\n"
 if ! source install.conf; then
 	read -p "Please enter username:" username
-echo "username=$username" >> ${HOME}/ArchTitus/install.conf
+echo "username=$username" >> ${HOME}/archi/install.conf
 fi
 if [ $(whoami) = "root"  ];
 then
