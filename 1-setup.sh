@@ -135,6 +135,7 @@ PKGS=(
 'libnewt'
 'libtool'
 'libreoffice-fresh'
+'libreoffice-fresh-pl'
 'linux'
 'linux-firmware'
 'linux-headers'
