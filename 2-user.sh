@@ -26,7 +26,6 @@ PKGS=(
 'autojump'
 'awesome-terminal-fonts'
 'dxvk-bin' # DXVK DirectX to Vulcan
-'freeoffice'
 'github-desktop-bin' # Github Desktop sync
 'lightly-git'
 'mangohud' # Gaming FPS Counter
